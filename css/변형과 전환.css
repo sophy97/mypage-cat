@@ -1,0 +1,35 @@
+.m-box {
+    width: 200px;
+    height: 200px;
+    background-color:lightblue;
+    
+}
+.translate {translate: 50px 100px;}
+
+.rotate {rotate: 30deg;}
+
+.scale {scale: 0.5; translate: 50px 0;}
+
+.skew { transform:skewX(-20deg);}
+
+.matrix {transform: matrix(1, 2, -3, 1, 80, 80); visibility: hidden;}
+
+.t-box {
+    width: 100px;
+    height: 100px;
+    background-color: darksalmon;
+}
+.transition-width {transition: width 1s;}
+.transition-width:hover {width: 200px; transition-duration: 0.5s;}
+.transition-height:hover {height: 300px;}
+
+.transition-color {
+    transition:
+    background-color 1s, border-radius 1s;}
+.transition-color:hover {
+    background-color: brown;
+    border-radius: 0.3s;
+}
+
+.transition-transform {transition: transform 1s;}
+.transition-transform:hover {transform: scale(1.5) rotate(90deg)}

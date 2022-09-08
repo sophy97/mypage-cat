@@ -1,0 +1,64 @@
+body { background-color: orange; }
+h1 {color: white;}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 100px;
+}
+.grid-item {
+    border: 3px solid purple;
+}
+
+/* min-width : 적어준 값 이상일때 보이는 화면 */
+@media screen and (min-width:980px) {
+    body {background-color: lightblue;}
+    .grid {grid-template-columns: repeat(4, 1fr);}
+    .menu {grid-template-columns: repeat(5, 1fr);}
+    .mobile-menuicon {display: none;}
+}
+@media (min-width:481px) and (max-width:980px) {
+    body {background-color:lightpink;}
+    .grid {grid-template-columns: repeat(2, 1fr);}
+    .menu {grid-template-columns: repeat(3, 1fr);}
+    .mobile-menuicon {display: none;}
+    
+}
+/* max-width : 적어준 값 이하일때 보이는 화면 */
+@media screen and (max-width:480px) {
+    body {background-color:darksalmon;}
+    .grid {grid-template-columns: repeat(1, 1fr);}
+    .menu {display: none;}
+    .mobile-menuicon {visibility: visible; font-size: 2em; align-self: center;}
+}
+
+/* 실습 - 미디어쿼리를 이용, 화면크기 따른 nav바 변화*/
+.nav { border-bottom: 3px solid black;}
+.nav .mobile-menuicon {display: none;}
+.nav .menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+.nav .menu > li { padding: 2px 10px;}
+
+.mobile-menuicon {
+    text-align: center;
+}
+/* pc크기 보여질 화면 */
+@media screen and (min-width:1024px) {
+    
+}
+/* 탭크기 보여질 화면 */
+@media (min-width:768px) and (max-width:1023px) {
+    .nav .menu {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        text-align: center;
+    }
+}
+/* 모바일 보여질 화면 */
+@media screen and (max-width:767px) {
+    .nav .mobile-menuicon {display: block;}
+    .nav .menu {display: none;}
+}
