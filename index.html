@@ -4,33 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/css/prac.css">
+    <title>냥이는 왜 그럴까?</title>
+    <link rel="stylesheet" href="./css/style.css">
+
 </head>
 <body>
         <!-- 
         pc크기일때 : 상단 메뉴바 생성
         탭 크기 : 상단 두줄메뉴바 생성
         모바일크기 : 상단 아이콘으로 메뉴바 생성
-    -->
+        -->
+    <div class="header">
+        <img src="./img/cat00.png" class="logocat">
+        <h2 class="title">냥이는 왜 그럴까?</h2>
+    </div>
     <div class="nav">
-        <p class="mobile-menuicon">🌻</p>
+        <p class="mobile-menuicon">😺</p>
         <ul class="menu">
-            <li>menu1</li> <li>menu2</li> <li>menu3</li>
-            <li>menu4</li> <li>menu5</li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">menu2</a></li>
+            <li><a href="">menu3</a></li>
+            <li><a href="">menu4</a></li>
+            <li><a href="">menu5</a></li>
         </ul>
     </div>
-    
-    <h1>미디어쿼리</h1>
-    <p>현재 태그들은 영향 받지 않습니다</p>
 
-    <h2>미디어쿼리 이용</h2>
-    <p>
-        980px이상: 4개  <br>
-        481px이상: 2개  <br>
-        480px이하: 1개  <br>
-        의 그리드 출력하기
-    </p>
+    <div class="preview">
+        <h2>1. About Us</h2>
+        <p>각 메뉴바 눌렀을때만 보이게, 페이지소개글</p>
+
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+    </div>
+    
 
     <div class="grid">
         <div class="grid-item">콘텐츠1입니다</div>
@@ -41,5 +49,6 @@
         <div class="grid-item">콘텐츠6입니다</div>
     </div>
 
+    <script src="./js/login.js"></script>
 </body>
 </html>

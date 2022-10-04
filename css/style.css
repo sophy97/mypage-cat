@@ -1,5 +1,23 @@
-body { background-color: orange; }
-h1 {color: white;}
+.header{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    height: 130px;
+}
+.header > .logocat {
+    grid-column: 0 / 1;
+    width: 130px;
+}
+.header > .title{
+    grid-column: 2 / 6;
+    text-align: center;
+}
+.nav .menu > li a{
+    text-decoration: none;
+    color: black;
+}
+.nav .menu > li { padding: 2px 10px;}
+
+body { background-color: rgb(72, 68, 60); }
 
 .grid {
     display: grid;
