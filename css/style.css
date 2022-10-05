@@ -1,14 +1,20 @@
 .header{
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    height: 130px;
+    grid-template-columns: repeat(4, 1fr);
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 2.5em;
 }
-.header > .logocat {
+.logocat {
     grid-column: 0 / 1;
-    width: 130px;
+    height: 200px;
+    width: 200px;
+}
+.nav {
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 1.8em;
 }
 .header > .title{
-    grid-column: 2 / 6;
+    grid-column: 2 / 5;
     text-align: center;
 }
 .nav .menu > li a{
@@ -25,18 +31,18 @@ body { background-color: rgb(72, 68, 60); }
     height: 100px;
 }
 .grid-item {
-    border: 3px solid purple;
+    border: 2px solid blue;
 }
 
 /* min-width : 적어준 값 이상일때 보이는 화면 */
 @media screen and (min-width:980px) {
-    body {background-color: lightblue;}
+    body {background-color:aliceblue;}
     .grid {grid-template-columns: repeat(4, 1fr);}
     .menu {grid-template-columns: repeat(5, 1fr);}
     .mobile-menuicon {display: none;}
 }
 @media (min-width:481px) and (max-width:980px) {
-    body {background-color:lightpink;}
+    body {background-color:lightblue;}
     .grid {grid-template-columns: repeat(2, 1fr);}
     .menu {grid-template-columns: repeat(3, 1fr);}
     .mobile-menuicon {display: none;}
@@ -44,7 +50,7 @@ body { background-color: rgb(72, 68, 60); }
 }
 /* max-width : 적어준 값 이하일때 보이는 화면 */
 @media screen and (max-width:480px) {
-    body {background-color:darksalmon;}
+    body {background-color:rgb(157, 216, 240);}
     .grid {grid-template-columns: repeat(1, 1fr);}
     .menu {display: none;}
     .mobile-menuicon {visibility: visible; font-size: 2em; align-self: center;}
